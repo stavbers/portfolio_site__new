@@ -514,10 +514,13 @@ to {
     }
   
     .header .icon-box i.fa {
+      font-family: 'red_icons';
       position: absolute;
       pointer-events: none;
     }
-  
+    #menu li i.fa {
+      font-family: 'red_icons';
+    }
     .header .icon-menu i {
       left: 0;
       right: 0;
@@ -616,7 +619,56 @@ to {
     font-size: 16px;
     line-height: 32px;
   }
+  .social-menu {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0;
+      margin: 0;
+      /* justify-content: center; */
+  }
+  .social-menu__item {
+    width: 50px;
+      height: 50px;
+      list-style: none;
+      position: relative;
+      transition: .3s;
+      margin: 20px 15px;
+      border-radius: 50%;
+      background: #2b2a2a;
+  }
+  .social-menu__item:first-child {
+    margin-left: 0;
+  }
+  .social-menu__item:last-child {
+    margin-right: 0;
+  }
+.social-menu__link {
+  display: block;
+  padding: 0;
   
+  width: 50px;
+  height: 50px;
+}
+
+.social-menu__item .io {
+    /* font-family: 'icomoon' !important; */
+    display: block;
+    cursor: pointer;
+    font-family: 'icomoon';
+    position: absolute;
+    font-size: 25px;
+    top: 12px;
+  }
+  .social-menu__item i {
+    left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      font-size: 35px;
+      top: 15px;
+  }
   /*** About ***/
   
   .about .main-content {
@@ -1067,6 +1119,7 @@ to {
     left: 0;
     top: 10px;
     font-size: 33px;
+    font-family: 'icomoon';
   }
   
   .contact .custom-span-contact i.fa-phone-square {
@@ -1100,6 +1153,15 @@ to {
     margin: 0 6px;
     background: #2b2a2a;
     border-radius: 50%;
+  }
+
+  .contact ul.social li a i {
+    cursor: pointer;
+    font-family: 'icomoon';
+    
+  }
+  .contact ul.social li a:hover {
+    text-decoration: none;
   }
   /* Form */
   .contact .contactform input[type=text],
@@ -1351,7 +1413,7 @@ to {
     }
   
     .btn.btn-contact:before {
-      content: "\f1d8";
+      content: "\e905";
     }
   
     .btn span {

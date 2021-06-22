@@ -53,7 +53,8 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'red_icons' !important;
+  /* font-family: 'red_icons' !important; */
+  font-family: 'red_icons';
   speak: never;
   font-style: normal;
   font-weight: normal;
